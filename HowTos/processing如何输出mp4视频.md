@@ -44,3 +44,5 @@ void keyPressed() {
 }
 ```
 如果得到视频输出，部署成功！
+
+![输出视频](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/HowTos/mediaSource/processing-movie.mp4)
