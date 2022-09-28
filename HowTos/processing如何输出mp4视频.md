@@ -21,7 +21,7 @@ https://www.gyan.dev/ffmpeg/builds/.
 
 安装好后，运行一下如下程序以检测部署是否成功：
 
-```
+```java
 import com.hamoid.*;
 
 VideoExport videoExport;
