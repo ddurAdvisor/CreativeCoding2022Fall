@@ -20,7 +20,7 @@ gifsicle -b anim.gif --replace '#0' new.gif
 ```
 
 2-在processing中将图像输出为gif序列：
-```
+```java
 int frames = 20;
 int framesToSave = 0;
 PGraphics pg[] = new PGraphics[frames];
