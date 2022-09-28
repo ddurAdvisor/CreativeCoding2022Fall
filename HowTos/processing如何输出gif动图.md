@@ -83,4 +83,4 @@ animTestLoop.gif用于命名输出的gif动图的文件名。
 
 
 即可得到名为animTestLoop.gif的动图。  
-![输出gif]()
+![输出gif](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/HowTos/mediaSource/animTestLoop.gif)
