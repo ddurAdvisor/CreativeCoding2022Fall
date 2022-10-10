@@ -21,19 +21,93 @@ for (int i = 0; i< 50; i ++) {
 - [bit2atom_20211018_01_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_01_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_02_image.png)
+- 随机分布几何对象
+- 几何对象基于其定位点坐标从参考图像中获取填充颜色
+```java
+for (int i = 0; i< 50; i ++) {
+    int xx = (int)random(width);
+    int yy = (int)random(height);
+    color fc = img.get(xx, yy);
+    fill(fc);
+    noStroke();
+    //rotate(random(TWO_PI));
+    rect(xx, yy, 20, 20);
+  }
+```
 
 - [bit2atom_20211018_02_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_02_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_03_image.png)
-
+- 创建图像对象
+```java
+PImage img;
+......
+img = createImage(width, height, RGB);
+```
+- 为图像对象赋予颜色值
+```java
+img.loadPixels();
+......
+for (int i = 0; i < width; i ++) {
+    for (int j = 0; j < height; j ++) {
+      if (i > width/3 && i < width/2 && j > height/3 && j < height/2) {
+        img.pixels[i+j*width] = color(255, 255, 0);
+      } else {
+        img.pixels[i+j*width] = color(255, 255, 255);
+      }
+    }
+    img.updatePixels();
+  }
+```
 - [bit2atom_20211018_03_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_03_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_05_image.png)
+- 利用模数创建棋盘格图像颜色生成函数
+```java
+void fillBlock(int x, int y, int size) {
+  for (int i = 0; i < size; i ++) {
+    for (int j = 0; j < size; j ++) {
+      int loc = (x*size + i) + (y*size + j)* width;
+      if (x%2 == y%2) {
+        img.pixels[loc] = color(255, 255, 255);
+      } else {
+        img.pixels[loc] = color(0, 0, 0);
+      }
+    }
+  }
+}
+```
 
 - [bit2atom_20211018_05_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_05_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_06_image.png)
+- 对指定像素区间进行色彩归纳
+```java
+void fillBlock(int x, int y, int size) {
+  int rr = 0;
+  int gg = 0;
+  int bb = 0;
+  color blockColr;
 
+  for (int i = 0; i < size; i ++) {
+    for (int j = 0; j < size; j ++) {
+      int loc = (x*size + i) + (y*size + j)* width;
+      rr += red(reference.pixels[loc]);
+      gg += green(reference.pixels[loc]);
+      bb += blue(reference.pixels[loc]);
+    }
+  }
+  
+  blockColr = color(rr/(size*size), gg/(size*size), bb/(size*size));
+
+  for (int i = 0; i < size; i ++) {
+    for (int j = 0; j < size; j ++) {
+      int loc = (x*size + i) + (y*size + j)* width;
+      img.pixels[loc] = blockColr;
+    }
+  }
+}
+```
 - [bit2atom_20211018_06_image.png)](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_06_image)
 
 
@@ -42,7 +116,11 @@ for (int i = 0; i< 50; i ++) {
 ## image process
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_01_pimage.png)
-
+- 图像的读入与现实
+```java
+img = loadImage("gate.png");
+image(img, 0, 0, width, height);
+```
 - [image_01_pimage](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_01_pimage)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_02_tint.png)
