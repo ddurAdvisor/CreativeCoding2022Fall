@@ -1,6 +1,6 @@
 Week04: Image and Pixel process
 
-## image load and access
+## image load, access and creation
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_01_image.png)
 
@@ -58,7 +58,7 @@ Week04: Image and Pixel process
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/pix2patterns.png)
 
-## pixel process and creative presentation B
+## pixel process and creative presentation B: from pixles to vectors
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/paintingWithFlowField.png)
 
