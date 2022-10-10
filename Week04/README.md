@@ -7,7 +7,7 @@ Week04: Image and Pixel process
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_01_image.png)
 - 控制几何对象分布
 - 几何对象基于其定位点坐标从参考图像中获取填充颜色
-```
+``` java
 for (int i = 0; i< 50; i ++) {
     int xx = (int)random(width);
     int yy = (int)random(height);
