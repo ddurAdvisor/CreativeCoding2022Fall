@@ -5,7 +5,19 @@ Week04: Image and Pixel process
 ## image load, access and creation
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_01_image.png)
-
+- 控制几何对象分布
+- 几何对象基于其定位点坐标从参考图像中获取填充颜色
+```
+for (int i = 0; i< 50; i ++) {
+    int xx = (int)random(width);
+    int yy = (int)random(height);
+    color fc = img.get(xx, yy);
+    fill(fc);
+    noStroke();
+    rotate(random(TWO_PI));
+    rect(xx, yy, 5, 50);
+  }
+```
 - [bit2atom_20211018_01_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_01_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_02_image.png)
