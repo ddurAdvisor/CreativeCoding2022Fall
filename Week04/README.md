@@ -18,7 +18,7 @@ for (int i = 0; i< 50; i ++) {
     rect(xx, yy, 5, 50);
   }
 ```
-- [bit2atom_20211018_01_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_01_image)
+- [完整的源程序：bit2atom_20211018_01_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_01_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_02_image.png)
 - 随机分布几何对象
@@ -35,7 +35,7 @@ for (int i = 0; i< 50; i ++) {
   }
 ```
 
-- [bit2atom_20211018_02_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_02_image)
+- [完整的源程序：bit2atom_20211018_02_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_02_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_03_image.png)
 - 创建图像对象
@@ -59,7 +59,7 @@ for (int i = 0; i < width; i ++) {
     img.updatePixels();
   }
 ```
-- [bit2atom_20211018_03_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_03_image)
+- [完整的源程序：bit2atom_20211018_03_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_03_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_05_image.png)
 - 利用模数创建棋盘格图像颜色生成函数
@@ -78,7 +78,7 @@ void fillBlock(int x, int y, int size) {
 }
 ```
 
-- [bit2atom_20211018_05_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_05_image)
+- [完整的源程序：bit2atom_20211018_05_image](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_05_image)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_06_image.png)
 - 对指定像素区间进行色彩归纳
@@ -108,7 +108,7 @@ void fillBlock(int x, int y, int size) {
   }
 }
 ```
-- [bit2atom_20211018_06_image.png)](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_06_image)
+- [完整的源程序：bit2atom_20211018_06_image.png)](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/bit2atom_20211018_06_image)
 
 
 
@@ -121,7 +121,7 @@ void fillBlock(int x, int y, int size) {
 img = loadImage("gate.png");
 image(img, 0, 0, width, height);
 ```
-- [image_01_pimage](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_01_pimage)
+- [完整的源程序：image_01_pimage](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_01_pimage)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_02_tint.png)
 - 使用tint()改变图像色调
@@ -130,7 +130,7 @@ img = loadImage("gate.png");
 tint(255, 0, 0);
 image(img, 0, 0, width, height);
 ```
-- [image_02_tint](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_02_tint)
+- [完整的源程序：image_02_tint](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_02_tint)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_03_notint.png)
 - 对比tint()与否的差异
@@ -141,7 +141,7 @@ image(img, 0, 0, width, height);
 noTint();
 image(img, width/2, 0, width, height);
 ```
-- [image_03_notint](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_03_notint)
+- [完整的源程序：image_03_notint](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_03_notint)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_04_img_sequence.png)
 - 读取图像序列
@@ -165,7 +165,7 @@ if (frame == numFrames) {
 }
 image(images[frame], mouseX - 75, mouseY - 108);
 ```
-- [image_04_img_sequence](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_04_img_sequence)
+- [完整的源程序：image_04_img_sequence](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_04_img_sequence)
 
 ![image_04_img_sequence_highway_2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_04_img_sequence_highway_2.png)
 - 用图像序列数影响图像的显示位置
@@ -179,7 +179,7 @@ frame = int(map(count, 0, width, 0, 224));
     count = 0;
   }
 ```
-- [image_04_img_sequence_highway_2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_04_img_sequence_highway_2)
+- [完整的源程序：image_04_img_sequence_highway_2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_04_img_sequence_highway_2)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_05_get.png)
 - 通过get()获取图像的像素值
@@ -188,7 +188,7 @@ color c = get(x, y);
 fill(c);
 ellipse(x, y, 100, 100);
 ```
-- [image_05_get](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_05_get)
+- [完整的源程序：image_05_get](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_05_get)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_06_get_pointilism.png)
 - 模拟点彩效果
@@ -199,7 +199,7 @@ color c = img.get(x, y);
 fill(c, 70);
 ellipse(x, y, 30, 30);
 ```
-- [image_06_get_pointilism](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_06_get_pointillism)
+- [完整的源程序：image_06_get_pointilism](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_06_get_pointillism)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_07_get_pixels.png)
 - 色彩采样
@@ -213,7 +213,7 @@ for (int y = 0; y < img.height; y+=s ) {
     }
 }
 ```
-- [image_07_get_pixels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_07_get_pixels)
+- [完整的源程序：image_07_get_pixels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_07_get_pixels)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_09_blend_shape.png)
 - blend()形状
@@ -224,7 +224,7 @@ fill(0);
 ellipse(width/2, height/2, 300, 300);
 blend(img, 0, 0, width, height, 0, 0, width, height, ADD);
 ```
-- [image_09_blend_shape](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_09_blend_shape)
+- [完整的源程序：image_09_blend_shape](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_09_blend_shape)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_108_filter.png)
 - 各种特征的filter()
@@ -233,7 +233,7 @@ float l = map(mouseX, 0, width, 0, 20);
 // BLUR, POSTERIZE, THRESHOLD, INVERT, GRAY, ERODE, DILATE
 filter(BLUR, l);
 ```
-- [image_108_filter](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_08_filter)
+- [完整的源程序：image_108_filter](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_08_filter)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_10_blend_images.png)
 - 图像融合
@@ -244,7 +244,7 @@ img2 = loadImage("hibiscus.jpg");
 img1.blend(img2, 0, 0, width, height, 0, 0, width, height, ADD);
 image(img1, 0, 0);
 ```
-- [image_10_blend_images](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_10_blend_images)
+- [完整的源程序：image_10_blend_images](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_10_blend_images)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_11_masking.png)
 - 图像遮罩
@@ -254,7 +254,7 @@ maskImg = loadImage("mask.jpg");
 img.mask(maskImg);
 image(img, 0, 0);
 ```
-- [image_11_masking](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_11_masking)
+- [完整的源程序：image_11_masking](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_11_masking)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/image_12_rgb.png)
 - 像素操作
@@ -266,7 +266,7 @@ maskImg = loadImage("mask.jpg");
 img.mask(maskImg);
 image(img, 0, 0);
 ```
-- [image_12_rgb](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_12_rgb)
+- [完整的源程序：image_12_rgb](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/image_12_rgb)
 
 
 
@@ -287,7 +287,7 @@ void drawGrid() {
   }
 }
 ```
-- [crystalPixels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/crystalPixels)
+- [完整的源程序：crystalPixels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/crystalPixels)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/crystalPixels_v2.png)
 - 色彩概括：提取单元格中所有的像素点的像素值后通过算术平均产生单元格颜色值
@@ -319,7 +319,7 @@ void drawGrid() {
   }
 }
 ```
-- [rystalPixels_v2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/crystalPixels_v2)
+- [完整的源程序：crystalPixels_v2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/crystalPixels_v2)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/imageColor_Abstraction_and_Sorting_v3.png)
 - Histogram生成色彩直方图
@@ -368,7 +368,7 @@ ArrayList createHistogramFromImage(int[] img, int numSamples, float tolerance, b
   return hist;
 }
 ```
-- [imageColor_Abstraction_and_Sorting_v3](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/imageColor_Abstraction_and_Sorting_v3)
+- [完整的源程序：imageColor_Abstraction_and_Sorting_v3](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/imageColor_Abstraction_and_Sorting_v3)
 
 
 
@@ -422,7 +422,7 @@ void checkOther() {
     //}
 }
 ```
-- [HodgingFiguration](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/HodginFiguration)
+- [完整的源程序：HodgingFiguration](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/HodginFiguration)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/particleScattering_portrait_v32b.png)
 - 粒子交互动态控制
@@ -461,7 +461,7 @@ void checkOther() {
     mass = sq(r)*0.0001+0.01;
   }
 ```
-- [particleScattering_portrait_v32b](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/particleScattering_Portrait_v32b)
+- [完整的源程序：particleScattering_portrait_v32b](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/particleScattering_Portrait_v32b)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/textDrawArtTool.png)
 - 从文本中获取字符并随绘制轨迹进行定位显示
@@ -501,7 +501,7 @@ void checkOther() {
     }
   }
 ```
-- [textDrawArtTool](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/TextDraw_Alpha05_FontFree_NewInterface_LiqunZhang)
+- [完整的源程序：textDrawArtTool](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/TextDraw_Alpha05_FontFree_NewInterface_LiqunZhang)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/pix2patterns.png)
 ```java
@@ -694,7 +694,7 @@ ArrayList<ArrayList<Dot>> getSpiralGrid(PGraphics pg, float step) {
   return out;
 }
 ```
-- [pix2patterns](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/pix2Patterns)
+- [完整的源程序：pix2patterns](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/pix2Patterns)
 
 
 
@@ -710,7 +710,7 @@ void move() {
     pos.add(vel);
 }
 ```
-- [paintingWithFlowField](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/paintingWithFlowField)
+- [完整的源程序：paintingWithFlowField](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/paintingWithFlowField)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/noiseBrushStyle2.png)
 - 将彩色图像转为灰度图像
@@ -788,4 +788,4 @@ float get_grey_from_image(PImage im, int x, int y) {
   noLoop();
 }
 ```
-- [noiseBrushStyle2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/noiseBrushStyle2)
+- [完整的源程序：noiseBrushStyle2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/noiseBrushStyle2)
