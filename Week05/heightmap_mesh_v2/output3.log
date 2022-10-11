@@ -1,0 +1,39 @@
+INFO-
+INFO-		AutoCAD 16 to Unigraphics Version NX V7.5
+INFO-		3.03
+INFO-
+INFO-		Running DXFTOUG Translator .....
+INFO-
+INFO-		Start of Translation: Wed Mar 20 15:16:12 2013
+INFO-
+STATUS-		Converting E:\+PilotStudy+\+Sketchbook+\heightmap_mesh_v2\output3.dxf
+STATUS-
+SUMMARY-
+SUMMARY-	Summary of AutoCAD Input Entities
+SUMMARY-	For AutoCAD File: E:\+PilotStudy+\+Sketchbook+\heightmap_mesh_v2\output3.dxf
+SUMMARY-SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Entity Type					Count
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Layout ...................................:	1
+SUMMARY-	Face 3D ..................................:	40198
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Total ....................................:	40199
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-
+STATUS-
+INFO-
+INFO-		Writing File: E:\+PilotStudy+\+Sketchbook+\heightmap_mesh_v2\output3_dxf.prt
+SUMMARY-	Summary of UG Output Entities
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Entity Type					Count
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Group ....................................:	1
+SUMMARY-	Layout ...................................:	1
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-	Total ....................................:	2
+SUMMARY-	------------------------------------------------------------------
+SUMMARY-
+INFO-
+INFO-		End of Translation: Wed Mar 20 15:16:14 2013
+INFO-		Translation CPU time: 0 m, 2 s
+INFO-
