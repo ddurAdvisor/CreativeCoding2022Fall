@@ -4,9 +4,10 @@ Week05: 3d and geometry
 
 ## 3d in processing ide
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d01.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d01.png" width=50% height=50%>. 
 - translate();
 - rotateX(); rotateY(); 
+
 ``` java
 translate(width/2, height/2, -width);
   
@@ -29,9 +30,10 @@ point(0, 0, 200);
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d02.png" width=50% height=50%>
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d02_lighting.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d02.png" width=50% height=50%>. 
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d02_lighting.png" width=50% height=50%>. 
 - lights();
+
 ``` java
 if (mousePressed) {
     // Turn the lights on on mouse press
@@ -77,9 +79,10 @@ endShape();
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d04_1.png" width=50% height=50%>
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d04_2.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d04_1.png" width=50% height=50%>. 
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d04_2.png" width=50% height=50%>. 
 - part1: beginShape(QUAD_STRIP);
+
 ``` java
 beginShape(QUAD_STRIP);
   for (int i = 0; i < sides + 1; i++) {
@@ -113,8 +116,8 @@ endShape();
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d05.png" width=50% height=50%>
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d05_explode.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d05.png" width=50% height=50%>. 
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d05_explode.png" width=50% height=50%>. 
 - saturation();
 ``` java
 for (int i = 0; i < cols; i++) {
@@ -137,8 +140,8 @@ for (int i = 0; i < cols; i++) {
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d08.png" width=50% height=50%>
-<img src="https://user-images.githubusercontent.com/22334198/195225563-4e13e48d-be8e-4675-932a-0a6a6c9d28e1.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d08.png" width=50% height=50%>. 
+<img src="https://user-images.githubusercontent.com/22334198/195225563-4e13e48d-be8e-4675-932a-0a6a6c9d28e1.png" width=50% height=50%>. 
 - camera(eyeX, eyeY, eyeZ,    centerX, centerY, centerZ,    upX, upY, upZ)
 ``` java
 camera(30.0, mouseY, mouseX, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
@@ -147,7 +150,7 @@ camera(30.0, mouseY, mouseX, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d09.png)
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d09.png" width=50% height=50%>. 
 - lightSpecular();
 - specular();
 ``` java
@@ -161,7 +164,7 @@ sphere(90);
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d10.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d10.png" width=50% height=50%>. 
 - pointLight(v1, v2, v3, x, y, z)
 - directionalLight(v1, v2, v3, nx, ny, nz)
 - spotLight(v1, v2, v3, x, y, z, nx, ny, nz, angle, concentration)
@@ -179,8 +182,8 @@ spotLight(0, 0, 255, // Color
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d11.png" width=50% height=50%>
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d11_stroke.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d11.png" width=50% height=50%>. 
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d11_stroke.png" width=50% height=50%>. 
 - vertex(x, y, z, u, v);
 ``` java
 img = loadImage("sunflower.jpg");
@@ -207,7 +210,7 @@ endShape();
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d12.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d12.png" width=50% height=50%>. 
 - beginShape(TRIANGLE_STRIP);
 - vertex(x, y, z, u, v);
 ``` java
@@ -246,7 +249,7 @@ void textureSphere(float rx, float ry, float rz, PImage t) {
 
 
 ## 3d application examples
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/texture_fishControl.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/texture_fishControl.png" width=50% height=50%>. 
 ```java
 void renderShape() {
   for (int i = 0; i < numPoints - 1; i++) {
@@ -271,7 +274,7 @@ void renderShape() {
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/heightmap.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/heightmap.png" width=50% height=50%>. 
 ```java
  //beginShape();//with lower rendering speed, but support DXF file export.
       beginShape(TRIANGLES);//with higher rendering speed, but do not support DXF file export.
@@ -298,7 +301,7 @@ endShape();
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/twistedCylinder.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/twistedCylinder.png" width=50% height=50%>. 
 ```java
 beginShape(TRIANGLES);
   for (int j = 0; j < cylinderHeightSection; j ++) {
