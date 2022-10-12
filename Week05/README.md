@@ -53,7 +53,7 @@ popMatrix();
 
 
 
-<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d03.png" width=50% height=50%>
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d03.png" width=50% height=50%>. 
 - beginShape(); endShape();
 - vertex(x, y, z);
 ``` java
