@@ -4,7 +4,7 @@ Week05: 3d and geometry
 
 ## 3d in processing ide
 
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d01.png){:height="200px" width="200px"}.
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week05/sourceImage/3d01.png" width=50% height=50%>
 - translate();
 - rotateX(); rotateY(); 
 ``` java
