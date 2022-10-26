@@ -725,8 +725,7 @@ while ((r*r+i*i<4)&&n<d) {
 
 
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week07/sourceImage/DLA_2d_diffusion_limited_aggregation.png" width=50% height=50%>. 
-- translate();
-- rotateX(); rotateY(); 
+- DLA: diffusion-limited aggregation
 
 ``` java
 void myset(PVector pos){
