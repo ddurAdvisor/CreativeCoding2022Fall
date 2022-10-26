@@ -107,7 +107,7 @@ void cantor(float x, float y, float len) {
 
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week07/sourceImage/basicFractal2.png" width=50% height=50%>. 
 - 递归
-- rfractal
+- fractal
 
 ``` java
 void fractal(float dia, float x, float y) {   
