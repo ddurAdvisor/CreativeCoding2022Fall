@@ -157,7 +157,7 @@ void gradientDescent(){
 
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/evolutionaryNeuralNetwork_flappyBird.png" width=50% height=50%>. 
 
-src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/evolutionaryNeuralNetwork_flappyBird3.png" width=50% height=50%>. 
+<img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/evolutionaryNeuralNetwork_flappyBird3.png" width=50% height=50%>. 
 - 遗传与神经网络算法
 
 ### NeuralNetwork
