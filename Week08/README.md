@@ -155,7 +155,164 @@ void gradientDescent(){
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/evolutionaryNeuralNetwork_flappyBird.png" width=50% height=50%>. 
 - 遗传与神经网络算法
 
+### NeuralNetwork
+```java
+/**
+   * [NeuralNetwork description]
+   * @Author   bit2atom
+   * @DateTime 2022-10-31T22:54:53+0800
+   * @param    {[type]}                 int   input  [description]
+   * @param    {[type]}                 int   hidden [description]
+   * @param    {[type]}                 int   output [description]
+   * @param    {[type]}                 float lr     [description]
+   */
+  NeuralNetwork(int input, int hidden, int output, float lr){
+    this(input, hidden, output);
+    setLearingRate(lr);
+  }
+```
+
+### feedForward
 ``` java
+/**
+   * [feedForward description]
+   * @Author   bit2atom
+   * @DateTime 2022-10-31T22:55:43+0800
+   * @param    {[type]}                 float[] inputArray    [description]
+   * @return   {[type]}                         [description]
+   */
+  float[] feedForward(float[] inputArray){
+    input = Matrix.FromArray(inputArray);
+
+    //generating hidden inputs
+    hidden = Matrix.Product(IHWeights, input);
+    hidden.add(Hbias);
+
+    //activation function for hidden nodes!
+    for (int i = 0; i < hidden.rows; i++){
+      for (int j = 0; j < hidden.cols; j++){
+        float val = hidden.values[i][j];
+        hidden.values[i][j] = sigmoid(val);
+      }
+    }
+
+    //generating hidden output
+    output = Matrix.Product(HOWeights, hidden);
+    output.add(Obias);
+
+    //activation function for ouput nodes!
+    for (int i = 0; i < output.rows; i++){
+      for (int j = 0; j < output.cols; j++){
+        float val = output.values[i][j];
+        output.values[i][j] = sigmoid(val);
+      }
+    }
+
+    //generating the output array
+    return output.toArray();
+  }
+```
+
+### backpropagation
+```java
+/**
+   * [train description]
+   * @Author   bit2atom
+   * @DateTime 2022-10-31T22:55:55+0800
+   * @param    {[type]}                 float[] inputArray    [description]
+   * @param    {[type]}                 float[] targetArray   [description]
+   * @return   {[type]}                         [description]
+   */
+  void train(float[] inputArray, float[] targetArray){
+    feedForward(inputArray);
+
+    Matrix targets = Matrix.FromArray(targetArray);
+    Matrix outputErrors = Matrix.subtract(targets, output);
+
+    //java version of matrix map function
+    Matrix gradient = output.copy();
+    for (int i = 0; i < gradient.rows; i++){
+      for (int j = 0; j < gradient.cols; j++){
+        float val = gradient.values[i][j];
+        gradient.values[i][j] = dsigmoid(val);
+      }
+    }
+
+    gradient.multiply(outputErrors);  //elementWise
+    gradient.multiply(LearningRate);  //Scalar
+
+    Matrix hiddenT = Matrix.transpose(hidden);
+    Matrix DHOWeights = Matrix.Product(gradient, hiddenT);
+
+    HOWeights.add(DHOWeights);
+
+    Obias.add(gradient);
+
+    Matrix HOWeightsT = Matrix.transpose(HOWeights);
+    Matrix hiddenErrors = Matrix.Product(HOWeightsT, outputErrors);
+
+    //java version of matrix map function
+    Matrix hiddenGradient = hidden.copy();
+    for (int i = 0; i < hiddenGradient.rows; i++){
+      for (int j = 0; j < hiddenGradient.cols; j++){
+        float val = hiddenGradient.values[i][j];
+        hiddenGradient.values[i][j] = dsigmoid(val);
+      }
+    }
+
+    /**
+     * 
+     */
+    hiddenGradient.multiply(hiddenErrors);
+    hiddenGradient.multiply(LearningRate);
+
+    Matrix inputT = Matrix.transpose(input);
+    Matrix DIHWeights = Matrix.Product(hiddenGradient, inputT);
+
+    IHWeights.add(DIHWeights);
+
+    Hbias.add(hiddenGradient);
+  }
+```
+
+### mutate
+```java
+/**
+   * [mutate description]
+   * @Author   bit2atom
+   * @DateTime 2022-10-31T22:55:27+0800
+   * @param    {[type]}                 float rate          [description]
+   * @return   {[type]}                       [description]
+   */
+  void mutate(float rate){
+    for (int i = 0; i < IHWeights.rows; i++){
+      for (int j = 0; j < IHWeights.cols; j++){
+        float val = IHWeights.values[i][j];
+        IHWeights.values[i][j] = mut(val, rate);
+      }
+    }
+    
+    for (int i = 0; i < HOWeights.rows; i++){
+      for (int j = 0; j < HOWeights.cols; j++){
+        float val = HOWeights.values[i][j];
+        HOWeights.values[i][j] = mut(val, rate);
+      }
+    }
+    
+    for (int i = 0; i < Hbias.rows; i++){
+      for (int j = 0; j < Hbias.cols; j++){
+        float val = Hbias.values[i][j];
+        Hbias.values[i][j] = mut(val, rate);
+      }
+    }
+    
+    for (int i = 0; i < Obias.rows; i++){
+      for (int j = 0; j < Obias.cols; j++){
+        float val = Obias.values[i][j];
+        Obias.values[i][j] = mut(val, rate);
+      }
+    }
+  }
 
 ```
 - [完整的源程序：evolutionaryNeuralNetwork_flappyBird](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week08/evolutionaryNeuralNetwork_flappyBird)
