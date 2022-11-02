@@ -1,7 +1,7 @@
 Week08 resource
 ## Complexity: Evolution and Neural Network Algorithms
 
-
+# 示例一：遗传与基因算法 - colorConfiguration_interactiveSelection  
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/colorConfiguration_interactiveSelection.png" width=50% height=50%>. 
 - 遗传与基因算法
 
@@ -131,6 +131,7 @@ Week08 resource
 - [完整的源程序：colorConfiguration_interactiveSelection](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week08/colorConfiguration_interactiveSelection)
 
 
+# 示例二：机器学习 - linearRegression
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/linearRegression.png" width=50% height=50%>. 
 - 梯度学习
 
@@ -151,6 +152,8 @@ void gradientDescent(){
 ```
 - [完整的源程序：linearRegression](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week08/linearRegression)
 
+
+# 示例三：遗传与神经网络算法 - evolutionaryNeuralNetwork_flappyBird
 
 <img src="https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week08/sourceImages/evolutionaryNeuralNetwork_flappyBird.png" width=50% height=50%>. 
 - 遗传与神经网络算法
