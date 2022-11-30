@@ -4,7 +4,7 @@ Week03 resource
 
 ## tutorials_array_01
 
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom_190626_01_class.png)
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/tutorials_array_01.png)
 
 ``` java
 
@@ -16,7 +16,7 @@ Week03 resource
 
 ## tutorials_array_02
 
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom_190626_01_class.png)
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/tutorials_array_02.png)
 
 ``` java
 
