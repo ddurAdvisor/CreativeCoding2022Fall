@@ -125,3 +125,82 @@
 ```
 - [完整的源程序：theme_shape_012](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_012)
 
+
+## theme_shape_013
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_013/theme_shape_013.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_013](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_013)
+
+
+## theme_shape_014
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_014/theme_shape_014.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_014](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_014)
+
+
+## theme_shape_015
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_015/theme_shape_015.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_015](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_015)
+
+
+## theme_shape_016
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_016/theme_shape_016.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_016](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_016)
+
+
+## theme_shape_017
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_017/theme_shape_017.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_017](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_017)
+
+
+## theme_shape_018
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_018/theme_shape_018.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_018](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_018)
+
+
+## theme_shape_019
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_019/theme_shape_019.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_019](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_019)
+
+
+## theme_shape_020
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_020/theme_shape_020.png)
+
+``` java
+
+```
+- [完整的源程序：theme_shape_020](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_020)
