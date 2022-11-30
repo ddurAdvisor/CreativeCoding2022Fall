@@ -107,7 +107,7 @@
 
 ## theme_shape_011
 
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_005/theme_shape_011.png)
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_011/theme_shape_011.png)
 
 ``` java
 
