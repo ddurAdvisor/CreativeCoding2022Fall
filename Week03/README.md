@@ -87,24 +87,6 @@ Week03 resource
 
 
 
-## bit2atom20220927a_particleConnections
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom20220927a_particleConnections.png)
-
-``` java
-
-```
-- [完整的源程序：bit2atom20220927a_particleConnections](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_001)
-
-
-
-## bit2atom_20220325b_seamlessPatterns_new
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom_20220325b_seamlessPatterns_new.png)
-
-``` java
-
-```
-- [完整的源程序：bit2atom_20220325b_seamlessPatterns_new](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/bit2atom_20220325b_seamlessPatterns_new)
-
 
 
 ## shapeOperation1
@@ -154,3 +136,23 @@ Week03 resource
 
 ```
 - [完整的源程序：shapeOperation5](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation5)
+
+
+
+## bit2atom20220927a_particleConnections
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom20220927a_particleConnections.png)
+
+``` java
+
+```
+- [完整的源程序：bit2atom20220927a_particleConnections](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/shapeOperation_OtherExamples/theme_shape_001)
+
+
+
+## bit2atom_20220325b_seamlessPatterns_new
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/sourceImages/bit2atom_20220325b_seamlessPatterns_new.png)
+
+``` java
+
+```
+- [完整的源程序：bit2atom_20220325b_seamlessPatterns_new](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week03/bit2atom_20220325b_seamlessPatterns_new)
