@@ -220,7 +220,7 @@
 
 ## theme_shape_022
 
-![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_020/theme_shape_022.png)
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week03/shapeOperation_OtherExamples/theme_shape_022/theme_shape_022.png)
 
 ``` java
 
