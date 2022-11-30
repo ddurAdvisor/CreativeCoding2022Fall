@@ -1,6 +1,6 @@
 Week03 resource
 
-## shapeOperation
+# Basic Shape Operation
 
 ## tutorials_array_01
 
@@ -161,7 +161,7 @@ Week03 resource
 
 
 
-## shapeOperation_OtherExamples
+# shape Operation: Other Examples
 
 ## theme_shape_001
 
