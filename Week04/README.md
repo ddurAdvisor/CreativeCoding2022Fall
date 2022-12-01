@@ -840,7 +840,82 @@ float get_grey_from_image(PImage im, int x, int y) {
 
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwaharaFilter_calculateRGBChannels.png)
-- 将彩色图像转为灰度图像
+- calculate Mean And Variance
 ```java
+void calculateMeanAndVariance(int i, int j) {
+  float meanRed = 0;
+  float meanGreen = 0;
+  float meanBLue = 0;
+
+  //int meanColor = 0;
+
+  float variance = 0;
+
+  float[][] meanAndVariance = new float[4][4];
+
+  int stepX = floor(kernalXSize/2);
+  int stepY = floor(kernalYSize/2);
+
+  for (int m = 0; m < 2; m ++) {
+    for (int n = 0; n < 2; n ++) {
+      int xLeft = i + stepX * (m-1);
+      int xRight = i + stepX * m;
+      int yTop = j + stepY * (n-1);
+      int yBottom = j + stepY * n;
+
+      //calculate Mean
+      for (int ii = xLeft; ii <= xRight; ii ++) {
+        for (int jj = yTop; jj <= yBottom; jj ++) {
+          int loc = jj * sourceImage.width + ii;
+          meanRed += red(sourceImage.pixels[loc]);
+          meanGreen += green(sourceImage.pixels[loc]);
+          meanBLue += blue(sourceImage.pixels[loc]);
+
+          //meanColor += sourceImage.pixels[loc];
+        }
+      }
+      meanRed /= ((xRight-xLeft+1)*(yBottom-yTop+1));
+      meanGreen /= ((xRight-xLeft+1)*(yBottom-yTop+1));
+      meanBLue /= ((xRight-xLeft+1)*(yBottom-yTop+1));
+
+      //meanColor /= ((xRight-xLeft+1)*(yBottom-yTop+1));
+
+      //calculate Variance
+      //Variance = \frac {\sum x^2}{samples} - mean^2
+      for (int ii = xLeft; ii <= xRight; ii ++) {
+        for (int jj = yTop; jj <= yBottom; jj ++) {
+          int loc = jj * sourceImage.width + ii;
+          variance += (red(sourceImage.pixels[loc]) - meanRed) * (red(sourceImage.pixels[loc]) - meanRed)
+            + (green(sourceImage.pixels[loc]) - meanRed) * (green(sourceImage.pixels[loc]) - meanGreen)
+            + (blue(sourceImage.pixels[loc]) - meanRed) * (blue(sourceImage.pixels[loc]) - meanBLue);
+          //variance += (sourceImage.pixels[loc] - meanColor) * (sourceImage.pixels[loc] - meanColor);
+        }
+      }
+      variance /= ((xRight-xLeft+1)*(yBottom-yTop+1));
+
+      meanAndVariance[m+n*2][0] = meanRed;
+      meanAndVariance[m+n*2][1] = meanGreen;
+      meanAndVariance[m+n*2][2] = meanBLue;
+      meanAndVariance[m+n*2][3] = variance;
+    }
+  }
+
+  //get pixle[i,j] value
+  float minVariance = 100000;
+  int minVarianceIndex = -1;
+  for (int k = 0; k < meanAndVariance.length; k ++) {
+    if (meanAndVariance[k][3] < minVariance) {
+      minVariance = meanAndVariance[k][3];
+      minVarianceIndex = k;
+    }
+  }
+
+  if (minVarianceIndex > -1) {
+    int loc = i + j * sourceImage.width;
+    processedImage.pixels[loc] = color(meanAndVariance[minVarianceIndex][0],
+      meanAndVariance[minVarianceIndex][1],
+      meanAndVariance[minVarianceIndex][2]);
+  }
+}
 ```
 - [完整的源程序：filter_kuwaharaFilter_calculateRGBChannels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_kuwaharaFilter_calculateRGBChannels)
