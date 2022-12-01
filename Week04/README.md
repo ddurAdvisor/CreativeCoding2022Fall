@@ -789,3 +789,35 @@ float get_grey_from_image(PImage im, int x, int y) {
 }
 ```
 - [完整的源程序：noiseBrushStyle2](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/noiseBrushStyle2)
+
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_convolution.png)
+- 将彩色图像转为灰度图像
+```java
+```
+- [完整的源程序：filter_convolution](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_convolution)
+
+
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_edgeDetect.png)
+- 将彩色图像转为灰度图像
+```java
+```
+- [完整的源程序：filter_edgeDetect](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_edgeDetect)
+
+
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_laplacianOperator3-1.png)
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_laplacianOperator3-2.png)
+- 将彩色图像转为灰度图像
+```java
+```
+- [完整的源程序：filter_laplacianOperator3](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_laplacianOperator3)
+
+
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwaharaFilter_calculateRGBChannels.png)
+- 将彩色图像转为灰度图像
+```java
+```
+- [完整的源程序：filter_kuwaharaFilter_calculateRGBChannels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_kuwaharaFilter_calculateRGBChannels)
