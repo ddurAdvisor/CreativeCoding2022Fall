@@ -2,6 +2,29 @@ Week04: Image and Pixel process
 
 
 
+## Font and Text
+- PFont.list()
+- createFont()
+- textFont()
+- fontSize()
+- textAlign()
+- text()
+
+![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/loopSerialFontSelection.png)
+``` java
+String fontName = PFont.list()[index];
+//println(fontName);
+textFont(createFont(fontName, 32));
+fill(random(255), random(255), random(255));
+text("Hello World!", width/2, height/2);
+    
+index ++;
+    
+index = index % PFont.list().length;
+```
+- [完整的源程序：loopSerialFontSelection](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/loopSerialFontSelection)
+
+
 ## image load, access and creation
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/bit2atom_20211018_01_image.png)
