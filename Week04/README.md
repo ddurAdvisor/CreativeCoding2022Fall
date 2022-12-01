@@ -815,8 +815,58 @@ float get_grey_from_image(PImage im, int x, int y) {
 
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_convolution.png)
-- 将彩色图像转为灰度图像
+- convolution kernal
+
 ```java
+/ The convolution matrix for a "sharpen" effect stored as a 3 x 3 two-dimensional array.
+float[][] matrix = { { -1, -1, -1 } , 
+                     { -1, 9, -1 } ,
+                     { -1, -1, -1 } } ;
+```
+
+```java
+/ The convolution matrix for a "blur" effect stored as a 3 x 3 two-dimensional array.
+float[][] matrix = { { 0.125, 0.25, 0.125 } , 
+                     { 0.25,  0.5,  0.25 } ,
+                     { 0.125, 0.25, 0.125 } } ;
+```
+
+```java
+color convolution(int x, int y, float[][] matrix, int matrixsize, PImage img) {
+  float rtotal = 0.0;
+  float gtotal = 0.0;
+  float btotal = 0.0;
+  int offset = matrixsize / 2;
+  
+  // Loop through convolution matrix
+  for (int i = 0; i < matrixsize; i++ ) {
+    for (int j = 0; j < matrixsize; j++ ) {
+      
+      // What pixel are we testing
+      int xloc = x + i-offset;
+      int yloc = y + j-offset;
+      int loc = xloc + img.width*yloc;
+      
+      // Make sure we haven't walked off the edge of the pixel array
+      // It is often good when looking at neighboring pixels to make sure we have not gone off the edge of the pixel array by accident.
+      loc = constrain(loc,0,img.pixels.length-1);
+      
+      // Calculate the convolution
+      // We sum all the neighboring pixels multiplied by the values in the convolution matrix.
+      rtotal += (red(img.pixels[loc]) * matrix[i][j]);
+      gtotal += (green(img.pixels[loc]) * matrix[i][j]);
+      btotal += (blue(img.pixels[loc]) * matrix[i][j]);
+    }
+  }
+  
+  // Make sure RGB is within range
+  rtotal = constrain(rtotal,0,255);
+  gtotal = constrain(gtotal,0,255);
+  btotal = constrain(btotal,0,255);
+  
+  // Return the resulting color
+  return color(rtotal,gtotal,btotal); 
+}
 ```
 - [完整的源程序：filter_convolution](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_convolution)
 
