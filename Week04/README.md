@@ -971,8 +971,10 @@ void calculateMeanAndVariance(int i, int j) {
 - [完整的源程序：filter_kuwaharaFilter_calculateRGBChannels](https://github.com/ddurAdvisor/CreativeCoding2022Fall/tree/main/Week04/filter_kuwaharaFilter_calculateRGBChannels)
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwahara_mountainAndLake%20(Kuwahara).png)
-- filter_kuwahara_mountainScene
+- filter_kuwahara_mountainScene.  
+
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwahara_portrait800990%20(Kuwahara).png)
-- filter_kuwahara_portrait_1
+- filter_kuwahara_portrait_1.  
+
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwahara_portrait_redCurls2%20(Kuwahara).png)
-- filter_kuwahara_portrait_r2
+- filter_kuwahara_portrait_r2. 
