@@ -974,7 +974,7 @@ void calculateMeanAndVariance(int i, int j) {
 - filter_kuwahara_mountainScene.  
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwahara_portrait800990%20(Kuwahara).png)
-- filter_kuwahara_portrait_1.  
+- filter_kuwahara_portrait_p1.  
 
 ![img](https://github.com/ddurAdvisor/CreativeCoding2022Fall/blob/main/Week04/sourceImage/filter_kuwahara_portrait_redCurls2%20(Kuwahara).png)
-- filter_kuwahara_portrait_r2. 
+- filter_kuwahara_portrait_p2. 
